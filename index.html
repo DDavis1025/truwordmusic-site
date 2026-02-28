@@ -6,41 +6,37 @@
   <title>TruWord Music</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Futura", sans-serif;
       text-align: center;
       padding: 50px 20px;
       background-color: black;
       margin: 0;
+      color: #DFDFDF;
     }
-    img {
+    img.logo {
       max-width: 100px;
       display: block;  /* forces the image to its own row */
-      margin: 0 auto 3px; /* centers it and adds space below */
+      margin: 0 auto 10px; /* centers and adds space below */
     }
-    p {
+    .app-headline {
+      font-weight: bold;
+      font-size: 1.7em;
+      color: #FFFFFF;
+      margin-bottom: 5px;
+    }
+    p.subheadline {
       font-size: 1.1em;
       margin-bottom: 30px;
       color: #DFDFDF;
     }
-    a.button {
-      display: inline-block;
-      padding: 15px 25px;
-      background-color: #000000;     /* black background */
-      color: white;                   /* text color */
-      text-decoration: none;
-      border-radius: 10px;            /* rounded corners */
-      border: 2px solid #f0f0f0;     /* light grey border */
-      font-size: 1.2em;
-      margin-bottom: 20px;
-      transition: background-color 0.3s, color 0.3s; /* smooth hover effect */
-    }
-    a.button:hover {
-      background-color: #222222;      /* slightly lighter black on hover */
-      color: #ffffff;                 /* keep text white */
+    .appstore-badge {
+      max-width: 200px;
+      display: block;
+      margin: 0 auto 20px;
     }
     footer {
       font-size: 0.9em;
-      color: #555;
+      color: #DFDFDF;
       margin-top: 40px;
     }
     footer a {
@@ -51,23 +47,18 @@
     footer a:hover {
       color: #808080;
     }
-    
-    .app-headline {
-      font-family: "Futura", sans-serif;
-      font-weight: bold;
-      font-size: 1.7em;
-      color: #FFFFFF;
-      margin-bottom: 3px;
-     }
- 
-
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="TruWord Music Logo">
+  <img class="logo" src="logo.png" alt="TruWord Music Logo">
   <h1 class="app-headline">TruWord Music</h1>
-  <p class="app-subheadline">Discover Top Christian Music</p>
-  <a class="button" href="https://apps.apple.com/us/app/truword-music/id6744539952" target="_blank">Download on the App Store</a>
+  <p class="subheadline">Discover Top Christian Music</p>
+
+  <!-- App Store Badge -->
+  <a href="https://apps.apple.com/us/app/truword-music/id6744539952" target="_blank">
+    <img class="appstore-badge" src="appstore-badge.png" alt="Download on the App Store">
+  </a>
+
   <footer>
     <p>
       <a href="privacy.html">Privacy Policy</a> | 
