@@ -3,31 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirecting to TruWord Music</title>
-  <meta http-equiv="refresh" content="0;url=https://apps.apple.com/us/app/truword-music/id6744539952">
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100svh;
-      margin: 0;
-      background-color: black;
-      color: #DFDFDF;
-      font-family: "Futura", sans-serif;
-      text-align: center;
-      padding: 20px;
-    }
-    a {
-      color: #FAFAFA;
-      text-decoration: underline;
-    }
-  </style>
+  <title>Redirecting…</title>
+
+  <script>
+    // Immediately redirect to the App Store
+    window.location.replace("https://apps.apple.com/us/app/truword-music/id6744539952");
+  </script>
+
+  <noscript>
+    <!-- Fallback for users without JavaScript -->
+    <meta http-equiv="refresh" content="0;url=https://apps.apple.com/us/app/truword-music/id6744539952">
+  </noscript>
 </head>
 <body>
-  <p>
+  <!-- Fallback message -->
+  <p style="text-align:center; font-family:Futura, sans-serif; color:#DFDFDF; background:black; height:100svh; display:flex; justify-content:center; align-items:center; margin:0; padding:20px;">
     Redirecting to the App Store…<br>
-    If it doesn’t open automatically, <a href="https://apps.apple.com/us/app/truword-music/id6744539952" target="_blank">click here</a>.
+    <a href="https://apps.apple.com/us/app/truword-music/id6744539952" style="color:#FAFAFA;">Click here if not redirected</a>
   </p>
 </body>
 </html>
