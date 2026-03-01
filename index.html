@@ -16,7 +16,7 @@
       margin: 0;
       padding: 0;
       height: 100%;
-      overflow: hidden; /* prevents scrolling */
+      overflow: hidden; /* prevents any scrolling */
       background-color: black;
     }
 
@@ -58,14 +58,6 @@
       margin: 0 auto 20px;
     }
 
-    /* TikTok note style */
-    .tiktok-note {
-      font-size: 0.9em;
-      color: #aaa;
-      margin-top: 10px;
-      display: none; /* hidden by default */
-    }
-
     footer {
       font-size: 0.9em;
       margin-top: 30px;
@@ -93,11 +85,6 @@
       <img class="appstore-badge" src="appstore-badge.svg" alt="Download on the App Store">
     </a>
 
-    <!-- TikTok note -->
-    <p class="tiktok-note" id="tiktok-note">
-      If clicking the button doesn’t work, please open this page in Safari.
-    </p>
-
     <footer>
       <p>
         <a href="privacy.html">Privacy Policy</a> |
@@ -105,20 +92,5 @@
       </p>
     </footer>
   </div>
-
-  <script>
-    // Wait until DOM is ready
-    document.addEventListener('DOMContentLoaded', function() {
-      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-      // Detect TikTok in-app browser (covers multiple versions)
-      if (/TikTok|musically/i.test(userAgent)) {
-        const note = document.getElementById('tiktok-note');
-        if (note) {
-          note.style.display = 'block';
-        }
-      }
-    });
-  </script>
 </body>
 </html>
