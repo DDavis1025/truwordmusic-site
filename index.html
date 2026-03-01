@@ -12,19 +12,23 @@
   <title>TruWord Music</title>
 
   <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden; /* prevents any scrolling */
+      background-color: black;
+    }
+
     body {
       font-family: "Futura", sans-serif;
-      background-color: black;
-      margin: 0;
       color: #DFDFDF;
-
-      /* Perfect Centering */
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
+    }
 
-      min-height: 100svh; /* Prevents mobile scroll issues */
+    .container {
       text-align: center;
       padding: 20px;
     }
@@ -34,6 +38,61 @@
       display: block;
       margin: 0 auto;
     }
+
+    .app-headline {
+      font-weight: bold;
+      font-size: 1.7em;
+      color: #FAFAFA;
+      margin: 5px 0 2px 0;
+    }
+
+    p.subheadline {
+      font-size: 1.1em;
+      margin: 7px 0 30px 0;
+    }
+
+    .appstore-badge {
+      max-width: 285px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    footer {
+      font-size: 0.9em;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #DFDFDF;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    footer a:hover {
+      color: #808080;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img class="logo" src="logo.png" alt="TruWord Music Logo">
+    <h1 class="app-headline">TruWord Music</h1>
+    <p class="subheadline">Discover Top Christian Music</p>
+
+    <a href="https://apps.apple.com/us/app/truword-music/id6744539952" target="_blank">
+      <img class="appstore-badge" src="appstore-badge.svg" alt="Download on the App Store">
+    </a>
+
+    <footer>
+      <p>
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="support.html">Support</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
 
     .app-headline {
       font-weight: bold;
