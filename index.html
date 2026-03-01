@@ -3,97 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
 
   <title>TruWord Music</title>
-
   <style>
     html, body {
-      height: 100%;
-      margin: 0;
-    }
+     height: 100%;
+     margin: 0;
+     }
 
     body {
-      font-family: "Futura", sans-serif;
-      background-color: black;
-      color: #DFDFDF;
+     font-family: "Futura", sans-serif;
+     background-color: black;
+     color: #DFDFDF;
 
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;   /* vertical centering */
+     align-items: center;       /* horizontal centering */
 
-      text-align: center;
+     text-align: center;
+     min-height: 100vh;         /* fill viewport height */
+     padding: 20px;             /* small safe padding */
+     box-sizing: border-box;
     }
-
-    /* This container centers your main content */
-    .main-content {
-      flex: 1; /* takes available space */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;  /* vertical centering */
-      align-items: center;      /* horizontal centering */
-      padding: 20px;
-      box-sizing: border-box;
-    }
-
     img.logo {
       max-width: 100px;
-      margin: 0;
+      display: block;  /* forces the image to its own row */
+      margin: 0 auto;  /* no extra space below */
+      padding: 0;
     }
-
     .app-headline {
       font-weight: bold;
       font-size: 1.7em;
       color: #FAFAFA;
-      margin: 5px 0 2px 0;
+      margin: 5px 0 2px 0; /* 0 top, 2px bottom */
     }
-
     p.subheadline {
       font-size: 1.1em;
       margin: 7px 0 30px 0;
       color: #DFDFDF;
+      text-align: center;
     }
-
     .appstore-badge {
       max-width: 271px;
-      margin-bottom: 20px;
+      display: block;
+      margin: 0 auto 20px;
     }
-
     footer {
       font-size: 0.9em;
       color: #DFDFDF;
-      padding: 20px 0;
+      margin-top: 40px;
     }
-
     footer a {
       color: #DFDFDF;
       text-decoration: none;
       margin: 0 8px;
     }
-
     footer a:hover {
       color: #808080;
     }
   </style>
 </head>
-
 <body>
+  <img class="logo" src="logo.png" alt="TruWord Music Logo">
+  <h1 class="app-headline">TruWord Music</h1>
+  <p class="subheadline">Discover Top Christian Music</p>
 
-  <div class="main-content">
-    <img class="logo" src="logo.png" alt="TruWord Music Logo">
-    <h1 class="app-headline">TruWord Music</h1>
-    <p class="subheadline">Discover Top Christian Music</p>
-
-    <a href="https://apps.apple.com/us/app/truword-music/id6744539952" target="_blank">
-      <img class="appstore-badge" src="appstore-badge.svg" alt="Download on the App Store">
-    </a>
-  </div>
+  <!-- App Store Badge -->
+  <a href="https://apps.apple.com/us/app/truword-music/id6744539952" target="_blank">
+    <img class="appstore-badge" src="appstore-badge.svg" alt="Download on the App Store">
+  </a>
 
   <footer>
     <p>
-      <a href="privacy.html">Privacy Policy</a> |
+      <a href="privacy.html">Privacy Policy</a> | 
       <a href="support.html">Support</a>
     </p>
   </footer>
-
 </body>
 </html>
