@@ -11,7 +11,7 @@
 
   <title>TruWord Music</title>
   <style>
-    /* Include padding/margins in height calculations */
+    /* Ensure padding/margins are included in height calculations */
     html {
       box-sizing: border-box;
       height: 100%;
@@ -33,24 +33,24 @@
 
       min-height: 100vh;       /* fill the viewport */
       margin: 0;
-      padding: 20px;           /* safe padding */
+      padding: 20px;           /* safe padding without causing scroll */
     }
 
     img.logo {
       max-width: 100px;
-      margin: 0 auto 15px auto; /* slightly closer to headline */
+      margin: 0 auto;
     }
 
     .app-headline {
       font-weight: bold;
       font-size: 1.7em;
       color: #FAFAFA;
-      margin: 0 0 5px 0;        /* reduced space below */
+      margin: 5px 0 2px 0;
     }
 
     p.subheadline {
       font-size: 1.1em;
-      margin: 0 0 25px 0;       /* reduced space below */
+      margin: 7px 0 30px 0;
       color: #DFDFDF;
     }
 
@@ -62,7 +62,7 @@
     footer {
       font-size: 0.9em;
       color: #DFDFDF;
-      margin-top: 30px;
+      margin-top: 40px;
     }
 
     footer a {
