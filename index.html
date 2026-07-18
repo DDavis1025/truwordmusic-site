@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,6 +74,27 @@
     footer a:hover {
       color: #808080;
     }
+    
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      margin: 20px 0 30px;
+    }
+
+    .social-links img {
+      width: 34px;
+      height: 34px;
+      transition: opacity 0.2s ease;
+    }
+
+    .social-links img:hover {
+      opacity: 0.7;
+    }
+
+    .social-links a {
+     color: white;
+    }
   </style>
 </head>
 
@@ -84,6 +107,20 @@
     <a href="https://apps.apple.com/us/app/truword-music/id6744539952" target="_blank">
       <img class="appstore-badge" src="appstore-badge.svg" alt="Download on the App Store">
     </a>
+    
+    <div class="social-links">
+  <a href="https://www.tiktok.com/@truwordmusic" target="_blank" aria-label="TikTok">
+    <img src="tiktok.svg" alt="TikTok">
+  </a>
+
+  <a href="https://www.facebook.com/TruWordMusic" target="_blank" aria-label="Facebook">
+    <img src="facebook.svg" alt="Facebook">
+  </a>
+
+  <a href="https://www.youtube.com/@TruWordMusic" target="_blank" aria-label="YouTube">
+    <img src="youtube.svg" alt="YouTube">
+  </a>
+</div>
 
     <footer>
       <p>
