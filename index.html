@@ -16,7 +16,6 @@
       margin: 0;
       padding: 0;
       height: 100%;
-      overflow: hidden; /* prevents any scrolling */
       background-color: black;
     }
 
@@ -55,7 +54,7 @@
     .appstore-badge {
       max-width: 285px;
       display: block;
-      margin: 0 auto 20px;
+      margin: 0 auto 35px;
     }
 
     footer {
@@ -72,6 +71,42 @@
     footer a:hover {
       color: #808080;
     }
+    
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      margin: 20px 0 30px;
+    }
+
+    .social-links img {
+      width: 34px;
+      height: 34px;
+      transition: opacity 0.2s ease;
+    }
+
+    .social-links img:hover {
+      opacity: 0.7;
+    }
+
+    .social-links a {
+     color: white;
+    }
+    
+    /* Allow scrolling only on mobile landscape */
+@media (max-height: 500px) and (orientation: landscape) {
+  html,
+  body {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  body {
+    align-items: flex-start;
+    padding-top: 20px;
+    transform: none; /* optional */
+  }
+}
   </style>
 </head>
 
@@ -84,6 +119,20 @@
     <a href="https://apps.apple.com/us/app/truword-music/id6744539952" target="_blank">
       <img class="appstore-badge" src="appstore-badge.svg" alt="Download on the App Store">
     </a>
+    
+    <div class="social-links">
+  <a href="https://www.tiktok.com/@truwordmusic" target="_blank" aria-label="TikTok">
+    <img src="tiktok.svg" alt="TikTok">
+  </a>
+
+  <a href="https://www.facebook.com/TruWordMusic" target="_blank" aria-label="Facebook">
+    <img src="facebook.svg" alt="Facebook">
+  </a>
+
+  <a href="https://www.youtube.com/@TruWordMusic" target="_blank" aria-label="YouTube">
+    <img src="youtube.svg" alt="YouTube">
+  </a>
+</div>
 
     <footer>
       <p>
